@@ -1,49 +1,198 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>PEI PAULO IDEVAR</title>
 <style>
-body { margin:0; font-family:Arial,sans-serif; background-color:#e6f0fa; color:#333; }
-header { background:#003f7f; color:white; padding:30px 20px; text-align:center; }
-header h1 { margin:0; font-size:2.5em; }
-nav { background:#005baa; padding:12px; text-align:center; }
-nav a { color:white; margin:0 10px; text-decoration:none; font-weight:bold; }
-nav a:hover { text-decoration:underline; }
-section { padding:40px 20px; max-width:1000px; margin:auto; }
-footer { background:#003f7f; color:white; text-align:center; padding:20px; margin-top:30px; }
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e6f0fa;
+    color: #333;
+    scroll-behavior: smooth;
+  }
+  header {
+    background: #003f7f;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+  nav {
+    background: #005baa;
+    padding: 12px;
+    text-align: center;
+    position: sticky;
+    top: 88px; /* altura do header */
+    z-index: 999;
+  }
+  nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+  }
+  footer {
+    background: #003f7f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid #005baa;
+    padding: 10px;
+    text-align: left;
+  }
+  th {
+    background: #005baa;
+    color: #fff;
+  }
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
 </style>
 </head>
 <body>
 
 <header>
-<h1>PEI PAULO IDEVAR</h1>
-<p>Educação pública que transforma a nossa comunidade</p>
+  <h1>PEI PAULO IDEVAR</h1>
+  <p>Educação pública que transforma a nossa comunidade</p>
 </header>
 
 <nav>
-<a href="index.html">Início</a>
-<a href="atividades.html">Atividades</a>
-<a href="biblioteca.html">Biblioteca</a>
-<a href="professor.html">Portal do Professor</a>
-<a href="acesso.html">Links de Acesso</a>
-<a href="grupos.html">Grupos</a>
+  <a href="#inicio">Início</a>
+  <a href="#atividades">Atividades</a>
+  <a href="#saladofuturo">Sala do Futuro</a>
+  <a href="#professor">Portal do Professor</a>
+  <a href="#acesso">Links de Acesso</a>
+  <a href="#agendagestora">Agenda Equipe Gestora</a>
+  <a href="#grupos">Grupos</a>
 </nav>
 
-<section>
-<h2>Bem-vindo</h2>
-<p>Site oficial da escola PEI PAULO IDEVAR.</p>
+<section id="inicio">
+  <h2>Bem-vindo</h2>
+  <p>Site oficial da escola PEI PAULO IDEVAR.</p>
 
-<h2>Contato</h2>
-<p><strong>Endereço:</strong> Rua Sebastião Pereira Machado, 31</p>
-<p>Vila Municipal – Carapicuíba</p>
-<p>CEP: 06328-230</p>
-<p><strong>Telefone:</strong> (41) 8447-33</p>
+  <h3>Contato</h3>
+  <p><strong>Endereço:</strong> Rua Sebastião Pereira Machado, 31</p>
+  <p>Vila Municipal – Carapicuíba</p>
+  <p>CEP: 06328-230</p>
+  <p><strong>Telefone:</strong> (41) 8447-33</p>
+</section>
+
+<section id="atividades">
+  <h2>Atividades</h2>
+  <p>Aqui você encontra as principais atividades da escola para os alunos e comunidade.</p>
+  <ul>
+    <li>Projetos culturais</li>
+    <li>Oficinas esportivas</li>
+    <li>Eventos especiais</li>
+    <li>Atividades extracurriculares</li>
+  </ul>
+</section>
+
+<section id="saladofuturo">
+  <h2>Sala do Futuro</h2>
+  <p>Espaço tecnológico inovador da escola para aprendizado dinâmico e interativo, com recursos multimídia, realidade virtual e ferramentas digitais.</p>
+  <ul>
+    <li>Laboratório de informática atualizado</li>
+    <li>Projetos interativos com realidade aumentada</li>
+    <li>Workshops de programação e robótica</li>
+    <li>Ambiente colaborativo para estudantes e professores</li>
+  </ul>
+</section>
+
+<section id="professor">
+  <h2>Portal do Professor</h2>
+  <p>Área dedicada aos professores para acesso a materiais, comunicados e suporte pedagógico.</p>
+  <ul>
+    <li>Calendário escolar</li>
+    <li>Plano de aula</li>
+    <li>Recursos didáticos</li>
+    <li>Fórum de dúvidas</li>
+  </ul>
+</section>
+
+<section id="acesso">
+  <h2>Links de Acesso</h2>
+  <p>Aqui estão os principais links úteis para a comunidade escolar.</p>
+  <ul>
+    <li><a href="https://educacao.sp.gov.br" target="_blank" rel="noopener noreferrer">Secretaria da Educação</a></li>
+    <li><a href="https://portaldoaluno.com" target="_blank" rel="noopener noreferrer">Portal do Aluno</a></li>
+    <li><a href="https://saeb.inep.gov.br" target="_blank" rel="noopener noreferrer">SAEB</a></li>
+  </ul>
+</section>
+
+<section id="agendagestora">
+  <h2>Agenda Equipe Gestora</h2>
+  <p>Confira os próximos compromissos e reuniões da equipe gestora da escola.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Data</th>
+        <th>Evento</th>
+        <th>Local</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>05/03/2026</td>
+        <td>Reunião Geral</td>
+        <td>Sala de Reuniões</td>
+      </tr>
+      <tr>
+        <td>15/03/2026</td>
+        <td>Planejamento Semestral</td>
+        <td>Auditório</td>
+      </tr>
+      <tr>
+        <td>25/03/2026</td>
+        <td>Visita Técnica</td>
+        <td>Escola Parceira</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="grupos">
+  <h2>Grupos</h2>
+  <p>Conheça os grupos que fazem parte da comunidade escolar.</p>
+  <ul>
+    <li>Clube Juvenil</li>
+    <li>Grupos Tutoriais</li>
+    <li>Programa de Ensino Integral</li>
+    <li>Acolhedores</li>
+  </ul>
 </section>
 
 <footer>
-© 2026 PEI PAULO IDEVAR - Todos os direitos reservados
+  © 2026 PEI PAULO IDEVAR - Todos os direitos reservados
 </footer>
 
 </body>
